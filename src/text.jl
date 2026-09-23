@@ -20,7 +20,8 @@
 Draw the text in the string `str` at `x`/`y` or `pt`, placing the start of the
 string at the point. If you omit the point, it's placed at the current `0/0`.
 
-`angle` specifies the rotation of the text relative to the current x-axis.
+`angle` specifies the rotation of the text relative to the current x-axis,
+measured clockwise.
 
 `hoffset` and `voffset` specify horizontal and vertical offsets, respectively.
 `toffset` and `noffset` specify offsets in the tangential and normal directions
