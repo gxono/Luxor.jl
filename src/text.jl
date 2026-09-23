@@ -107,8 +107,8 @@ function text(t::T where {T<:AbstractString}, pt::Point;
     textpointy = pt.y - [ybearing, ybearing / 2, 0, textheight + ybearing][valignment]
 
     # apply horizontal/vertical and tangential/normal offsets
-    Δx = hoffset + toffset * cos(angle) + noffset * sin(angle)
-    Δy = voffset + toffset * sin(angle) - noffset * cos(angle)
+    Δx = hoffset + toffset * cos(angle) - noffset * sin(angle)
+    Δy = voffset + toffset * sin(angle) + noffset * cos(angle)
 
     # need to adjust for any rotation now
     # rotate around original point
